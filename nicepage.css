@@ -45649,12 +45649,12 @@ a.u-link.u-text-hover-color-var:hover {
         }
         h1:not(.u-title)
         {
-        font-size: 4.0625rem;
+        font-size: 3.75rem;
         line-height: 1.1;
         margin-top: 20px;
         margin-bottom: 20px;
         font-weight: 700;
-        text-shadow: 2px 2px 8px rgba(26,26,26,1);
+        text-shadow: 2px 2px 8px rgba(0,0,0,1);
         font-family: Raleway,sans-serif;
         }
         h2:not(.u-subtitle)
@@ -45663,8 +45663,8 @@ a.u-link.u-text-hover-color-var:hover {
         line-height: 1.1;
         margin-top: 20px;
         margin-bottom: 20px;
-        font-weight: 500;
         font-family: Raleway,sans-serif;
+        font-weight: 500;
         }
         h3
         {
@@ -45672,8 +45672,8 @@ a.u-link.u-text-hover-color-var:hover {
         line-height: 1.2;
         margin-top: 20px;
         margin-bottom: 20px;
-        font-weight: 700;
         font-family: Raleway,sans-serif;
+        font-weight: 700;
         }
         h4
         {
@@ -45681,7 +45681,7 @@ a.u-link.u-text-hover-color-var:hover {
         line-height: 1.2;
         margin-top: 20px;
         margin-bottom: 20px;
-        font-weight: 400;
+        font-weight: 600;
         font-family: Raleway,sans-serif;
         }
         h5
@@ -46084,7 +46084,7 @@ a.u-link.u-text-hover-color-var:hover {
         /** alt-color-rules **/
         :where(.u-shading) h1:not(.u-title), :where(.u-overlap-contrast .u-header) h1:not(.u-title):not(.u-nav-link):not(.u-btn)
         {
-        color: #111111;
+        color: #b3b3b3;
         }
         :where(.u-body-color, .u-palette-1-base, .u-palette-1-dark-3, .u-palette-1-dark-2, .u-palette-1-dark-1, .u-palette-1, .u-palette-1-light-1, .u-palette-2-base, .u-palette-2-dark-3, .u-palette-2-dark-2, .u-palette-2-dark-1, .u-palette-2, .u-palette-2-light-1, .u-palette-3-dark-3, .u-palette-3-dark-2, .u-palette-3-dark-1, .u-palette-4-base, .u-palette-4-dark-3, .u-palette-4-dark-2, .u-palette-4-dark-1, .u-palette-5-dark-3, .u-palette-5-dark-2, .u-palette-5-dark-1, .u-grey-40, .u-grey-30, .u-grey-90, .u-grey-80, .u-grey-75, .u-black, .u-grey-70, .u-grey-60, .u-grey-50, .u-grey-dark-3, .u-grey-dark-2, .u-grey-dark-1, .u-grey, .u-shading) a, :where(.u-overlap-contrast .u-header) a:not(.u-nav-link):not(.u-btn)
         {
@@ -46122,45 +46122,62 @@ a.u-link.u-text-hover-color-var:hover {
   background-image: none;
   padding-left: 32px;
   padding-right: 32px;
-  min-height: 116px;
+  min-height: 100px;
+}
+
+.u-header .u-image-1 {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
 }
 
 .u-header .u-menu-1 {
-  margin: 68px auto 8px calc(((100% - 1140px) / 2));
+  margin: -50px auto 10px calc(((100% - 1140px) / 2));
 }
 
 .u-header .u-nav-1 {
   font-size: 1.125rem;
   font-weight: 700;
+  letter-spacing: normal;
 }
 
 .u-header .u-nav-2 {
   font-size: 1.25rem;
 }
-
-.u-header .u-image-1 {
-  width: 114px;
-}
 @media (max-width: 1199px) {
-  .u-header .u-menu-1 {
-    margin-left: calc(((100% - 940px) / 2));
+   .u-header {
+    min-height: 107px;
   }
 
-  .u-header .u-nav-1 {
-    border-style: dotted;
+  .u-header .u-menu-1 {
+    width: auto;
+    margin-top: -50px;
+    margin-left: calc(((100% - 940px) / 2));
   }
 }
 @media (max-width: 991px) {
+   .u-header {
+    min-height: 114px;
+  }
+
   .u-header .u-menu-1 {
     margin-left: calc(((100% - 720px) / 2));
   }
 }
 @media (max-width: 767px) {
+   .u-header {
+    min-height: 121px;
+  }
+
   .u-header .u-menu-1 {
     margin-left: calc(((100% - 540px) / 2));
   }
 }
 @media (max-width: 575px) {
+   .u-header {
+    min-height: 128px;
+  }
+
   .u-header .u-menu-1 {
     margin-left: calc(((100% - 340px) / 2));
   }
@@ -46175,17 +46192,38 @@ a.u-link.u-text-hover-color-var:hover {
 }
 
 .u-footer .u-text-1 {
-  margin: 7px 33px;
+  margin: 7px 0;
 }
 @media (max-width: 1199px) {
   .u-footer .u-text-1 {
-    margin-left: 0;
-    margin-right: 0;
+    width: auto;
+    margin-top: 7px;
+    margin-bottom: -20px;
   }
 }
+@media (max-width: 991px) {
+  .u-footer .u-sheet-1 {
+    min-height: 100px;
+  }
 
+  .u-footer .u-text-1 {
+    margin-bottom: 4px;
+  }
+}
+@media (max-width: 767px) {
+  .u-footer .u-sheet-1 {
+    min-height: 60px;
+  }
 
-
+  .u-footer .u-text-1 {
+    margin-bottom: 7px;
+  }
+}
+@media (max-width: 575px) {
+  .u-footer .u-sheet-1 {
+    min-height: 142px;
+  }
+}
 
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
